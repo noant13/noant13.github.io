@@ -118,7 +118,12 @@
                       }
                     }
                   }
-        </script>       
+        </script> 
+        <style>
+            .TableHeaders:hover {
+                cursor: pointer;
+            }
+        </style>
     </head>
 
     <style>
@@ -129,17 +134,18 @@
 
     <body>
         <h1>Cars</h1>
+        <p>Hover over table headers to sort each table.</p>
           <h2>Honda of Watertown</h2>
             <table id="HondaTable">
                 <tr>
-                    <td onclick="sortHondaTable(0)"><h3>Cars</h3></td>
-                    <td onclick="sortHondaTable(1)"><h3>Year</h3></td>
-                    <td onclick="sortHondaTable(2)"><h3>Price</h3></td>
-                    <td onclick="sortHondaTable(3)"><h3>Amount Borrowed</h3></td>
-                    <td onclick="sortHondaTable(4)"><h3>Payment per Month</h3></td>
-                    <td onclick="sortHondaTable(5)"><h3>Geico Insurance</h3></td>
-                    <td onclick="sortHondaTable(6)"><h3>Liberty Mutual</h3></td>
-                    <td onclick="sortHondaTable(7)"><h3>Progressive</h3></td>
+                    <td onclick="sortHondaTable(0)" class="TableHeaders"><h3>Cars</h3></td>
+                    <td onclick="sortHondaTable(1)" class="TableHeaders"><h3>Year</h3></td>
+                    <td onclick="sortHondaTable(2)" class="TableHeaders"><h3>Price</h3></td>
+                    <td onclick="sortHondaTable(3)" class="TableHeaders"><h3>Amount Borrowed</h3></td>
+                    <td onclick="sortHondaTable(4)" class="TableHeaders"><h3>Payment per Month</h3></td>
+                    <td onclick="sortHondaTable(5)" class="TableHeaders"><h3>Geico Insurance</h3></td>
+                    <td onclick="sortHondaTable(6)" class="TableHeaders"><h3>Liberty Mutual</h3></td>
+                    <td onclick="sortHondaTable(7)" class="TableHeaders"><h3>Progressive</h3></td>
                 </tr>
                 <tr>
                     <td><a href="https://www.hondaofwatertown.com/inventory/used-2021-chevrolet-equinox-lt-fwd-sport-utility-2gnaxkev4m6122686/" target="_blank">2021 Chevrolet Equinox LT</a></td>
@@ -195,14 +201,14 @@
           <h2>Chevrolet Blasius</h2>
             <table id="ChevroletTable">
           <tr>
-              <td onclick="sortChevroletTable(0)"><h3>Cars</h3></td>
-              <td onclick="sortChevroletTable(1)"><h3>Year</h3></td>
-              <td onclick="sortChevroletTable(2)"><h3>Price</h3></td>
-              <td onclick="sortChevroletTable(3)"><h3>Amount Borrowed</h3></td>
-              <td onclick="sortChevroletTable(4)"><h3>Payment per Month</h3></td>
-              <td onclick="sortChevroletTable(5)"><h3>Geico Insurance</h3></td>
-              <td onclick="sortChevroletTable(6)"><h3>Liberty Mutual</h3></td>
-              <td onclick="sortChevroletTable(7)"><h3>Progressive</h3></td>
+              <td onclick="sortChevroletTable(0)" class="TableHeaders"><h3>Cars</h3></td>
+              <td onclick="sortChevroletTable(1)" class="TableHeaders"><h3>Year</h3></td>
+              <td onclick="sortChevroletTable(2)" class="TableHeaders"><h3>Price</h3></td>
+              <td onclick="sortChevroletTable(3)" class="TableHeaders"><h3>Amount Borrowed</h3></td>
+              <td onclick="sortChevroletTable(4)" class="TableHeaders"><h3>Payment per Month</h3></td>
+              <td onclick="sortChevroletTable(5)" class="TableHeaders"><h3>Geico Insurance</h3></td>
+              <td onclick="sortChevroletTable(6)" class="TableHeaders"><h3>Liberty Mutual</h3></td>
+              <td onclick="sortChevroletTable(7)" class="TableHeaders"><h3>Progressive</h3></td>
           </tr>
           <tr>
               <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2021-Volkswagen-Passat-20T+SE-1VWSA7A3XMC005120" target="_blank">2021 Volkswagen Passat 2.0T SE</a></td>
@@ -260,14 +266,14 @@
           <h2>Carmax</h2>
             <table id="CarmaxTable">
           <tr>
-              <td onclick="sortCarmaxTable(0)"><h3>Cars</h3></td>
-              <td onclick="sortCarmaxTable(1)"><h3>Year</h3></td>
-              <td onclick="sortCarmaxTable(2)"><h3>Price</h3></td>
-              <td onclick="sortCarmaxTable(3)"><h3>Amount Borrowed</h3></td>
-              <td onclick="sortCarmaxTable(4)"><h3>Payment per Month</h3></td>
-              <td onclick="sortCarmaxTable(5)"><h3>Geico Insurance</h3></td>
-              <td onclick="sortCarmaxTable(6)"><h3>Liberty Mutual</h3></td>
-              <td onclick="sortCarmaxTable(7)"><h3>Progressive</h3></td>
+              <td onclick="sortCarmaxTable(0)" class="TableHeaders"><h3>Cars</h3></td>
+              <td onclick="sortCarmaxTable(1)" class="TableHeaders"><h3>Year</h3></td>
+              <td onclick="sortCarmaxTable(2)" class="TableHeaders"><h3>Price</h3></td>
+              <td onclick="sortCarmaxTable(3)" class="TableHeaders"><h3>Amount Borrowed</h3></td>
+              <td onclick="sortCarmaxTable(4)" class="TableHeaders"><h3>Payment per Month</h3></td>
+              <td onclick="sortCarmaxTable(5)" class="TableHeaders"><h3>Geico Insurance</h3></td>
+              <td onclick="sortCarmaxTable(6)" class="TableHeaders"><h3>Liberty Mutual</h3></td>
+              <td onclick="sortCarmaxTable(7)" class="TableHeaders"><h3>Progressive</h3></td>
           </tr>
           <tr>
               <td><a href="https://www.carmax.com/car/23471361" target="_blank">2015 Chevrolet Malibu LT</a></td>
