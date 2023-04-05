@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Cars to Purchase</title>
+        <link rel="stylesheet" href="cars.css">
+        <script>
+            function sortHondaTable(n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById("HondaTable");
+              switching = true;
+              dir = "asc";
+              while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                  shouldSwitch = false;
+                  x = rows[i].getElementsByTagName("td")[n];
+                  y = rows[i + 1].getElementsByTagName("td")[n];
+                  if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                      shouldSwitch= true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  switchcount ++;
+                } else {
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+        </script>      
+        <script>
+                  function sortChevroletTable(n) {
+                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("ChevroletTable");
+                    switching = true;
+                    dir = "asc";
+                    while (switching) {
+                      switching = false;
+                      rows = table.rows;
+                      for (i = 1; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("td")[n];
+                        y = rows[i + 1].getElementsByTagName("td")[n];
+                        if (dir == "asc") {
+                          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                          }
+                        } else if (dir == "desc") {
+                          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                          }
+                        }
+                      }
+                      if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        switchcount ++;
+                      } else {
+                        if (switchcount == 0 && dir == "asc") {
+                          dir = "desc";
+                          switching = true;
+                        }
+                      }
+                    }
+                  }
+        </script>   
+        <script>
+                  function sortCarmaxTable(n) {
+                    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                    table = document.getElementById("CarmaxTable");
+                    switching = true;
+                    dir = "asc";
+                    while (switching) {
+                      switching = false;
+                      rows = table.rows;
+                      for (i = 1; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("td")[n];
+                        y = rows[i + 1].getElementsByTagName("td")[n];
+                        if (dir == "asc") {
+                          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                          }
+                        } else if (dir == "desc") {
+                          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                          }
+                        }
+                      }
+                      if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                        switchcount ++;
+                      } else {
+                        if (switchcount == 0 && dir == "asc") {
+                          dir = "desc";
+                          switching = true;
+                        }
+                      }
+                    }
+                  }
+        </script>       
+    </head>
+
+    <style>
+        td {
+            padding-left: 50px;
+            }
+      </style>
+
+    <body>
+        <h1>Cars</h1>
+          <h2>Honda of Watertown</h2>
+            <table id="HondaTable">
+                <tr>
+                    <td onclick="sortHondaTable(0)"><h3>Cars</h3></td>
+                    <td onclick="sortHondaTable(1)"><h3>Year</h3></td>
+                    <td onclick="sortHondaTable(2)"><h3>Price</h3></td>
+                    <td onclick="sortHondaTable(3)"><h3>Amount Borrowed</h3></td>
+                    <td onclick="sortHondaTable(4)"><h3>Payment per Month</h3></td>
+                    <td onclick="sortHondaTable(5)"><h3>Geico Insurance</h3></td>
+                    <td onclick="sortHondaTable(6)"><h3>Liberty Mutual</h3></td>
+                    <td onclick="sortHondaTable(7)"><h3>Progressive</h3></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hondaofwatertown.com/inventory/used-2021-chevrolet-equinox-lt-fwd-sport-utility-2gnaxkev4m6122686/" target="_blank">2021 Chevrolet Equinox LT</a></td>
+                    <td><p>2021</p></td>
+                    <td><p>$20,950</p></td>
+                    <td><p>$14,950</p></td>
+                    <td><p>$269</p></td>
+                    <td><p>$310</p></td>
+                    <td><p>$434</p></td>
+                    <td><p>$267</p></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hondaofwatertown.com/inventory/used-2021-chevrolet-malibu-ls-fwd-4dr-car-1g1zb5st3mf040669/" target="_blank">2021 Chevrolet Malibu LS</a></td>
+                    <td><p>2021</p></td>
+                    <td><p>$20,825</p></td>
+                    <td><p>$14,825</p></td>
+                    <td><p>$266</p></td>
+                    <td><p>$376</p></td>
+                    <td><p>$540</p></td>
+                    <td><p>$324</p></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hondaofwatertown.com/inventory/certified-used-2018-honda-accord-sedan-lx-1-5t-fwd-4dr-car-1hgcv1f15ja043296/" target="_blank">2018 Honda Accord Sedan LX 1.5T</a></td>
+                    <td><p>2018</p></td>
+                    <td><p>$19,600</p></td>
+                    <td><p>$13,600</p></td>
+                    <td><p>$244</p></td>
+                    <td><p>$332</p></td>
+                    <td><p>$464</p></td>
+                    <td><p>$338</p></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hondaofwatertown.com/inventory/certified-used-2016-honda-accord-sedan-ex-l-fwd-4dr-car-1hgcr3f83ga030052/" target="_blank">2016 Honda Accord Sedan EX-L</a></td>
+                    <td><p>2016</p></td>
+                    <td><p>$17,425</p></td>
+                    <td><p>$11,425</p></td>
+                    <td><p>$205</p></td>
+                    <td><p>$378</p></td>
+                    <td><p>$486</p></td>
+                    <td><p>$254</p></td>
+                </tr>            
+                <tr>
+                    <td><a href="https://www.hondaofwatertown.com/inventory/certified-used-2016-honda-civic-sedan-ex-fwd-4dr-car-19xfc2f78ge076696/" target="_blank">2016 Honda Civic Sedan EX</a></td>
+                    <td><p>2016</p></td>
+                    <td><p>$16,965</p></td>
+                    <td><p>$10,965</p></td>
+                    <td><p>$197</p></td>
+                    <td><p>$365</p></td>
+                    <td><p>$408</p></td>
+                    <td><p>$278</p></td>
+                </tr>             
+            </table>
+          <h2>Chevrolet Blasius</h2>
+            <table id="ChevroletTable">
+          <tr>
+              <td onclick="sortChevroletTable(0)"><h3>Cars</h3></td>
+              <td onclick="sortChevroletTable(1)"><h3>Year</h3></td>
+              <td onclick="sortChevroletTable(2)"><h3>Price</h3></td>
+              <td onclick="sortChevroletTable(3)"><h3>Amount Borrowed</h3></td>
+              <td onclick="sortChevroletTable(4)"><h3>Payment per Month</h3></td>
+              <td onclick="sortChevroletTable(5)"><h3>Geico Insurance</h3></td>
+              <td onclick="sortChevroletTable(6)"><h3>Liberty Mutual</h3></td>
+              <td onclick="sortChevroletTable(7)"><h3>Progressive</h3></td>
+          </tr>
+          <tr>
+              <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2021-Volkswagen-Passat-20T+SE-1VWSA7A3XMC005120" target="_blank">2021 Volkswagen Passat 2.0T SE</a></td>
+              <td><p>2021</p></td>
+              <td><p>$20,990</p></td>
+              <td><p>$14,990</p></td>
+              <td><p>$269</p></td>
+              <td><p>$443</p></td>
+              <td><p>$417</p></td>
+              <td><p>$236</p></td>
+
+          </tr>
+          <tr>
+              <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2021-Toyota-Corolla-LE-JTDEPMAE4MJ133976" target="_blank">2021 Toyota Corolla LT</a></td>
+              <td><p>2021</p></td>
+              <td><p>$18,990</p></td>
+              <td><p>$12,990</p></td>
+              <td><p>$233</p></td>
+              <td><p>$441</p></td>
+              <td><p>$407</p></td>
+              <td><p>$240</p></td>
+          </tr>
+          <tr>
+              <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2021-Chevrolet-Malibu-LT-1G1ZD5ST4MF045258" target="_blank">2021 Chevrolet Malibu LT</a></td>
+              <td><p>2021</p></td>
+              <td><p>$17,990</p></td>
+              <td><p>$11,990</p></td>
+              <td><p>$215</p></td>
+              <td><p>$500</p></td>
+              <td><p>$525</p></td>
+              <td><p>$268</p></td>
+
+          </tr>
+          <tr>
+              <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2020-Chevrolet-Equinox-LT-2GNAXUEV2L6236048" target="_blank">2020 Chevrolet Equinox LT</a></td>
+              <td><p>2020</p></td>
+              <td><p>$18,990</p></td>
+              <td><p>$12,990</p></td>
+              <td><p>$233</p></td>
+              <td><p>$397</p></td>
+              <td><p>$372</p></td>
+              <td><p>$219</p></td>        
+          </tr>            
+          <tr>
+              <td><a href="https://www.blasiuschevrolet.com/used-Waterbury-2018-Volkswagen-Tiguan-20T+S+4Motion-3VV0B7AX8JM028451" target="_blank">2018 Volkswagen Tiguan 2.0T S 4Motion</a></td>
+              <td><p>2018</p></td>
+              <td><p>$17,996</p></td>
+              <td><p>$11,996</p></td>
+              <td><p>$216</p></td>
+              <td><p>$361</p></td>
+              <td><p>$417</p></td>
+              <td><p>$236</p></td>
+          </tr>             
+            </table>
+          <h2>Carmax</h2>
+            <table id="CarmaxTable">
+          <tr>
+              <td onclick="sortCarmaxTable(0)"><h3>Cars</h3></td>
+              <td onclick="sortCarmaxTable(1)"><h3>Year</h3></td>
+              <td onclick="sortCarmaxTable(2)"><h3>Price</h3></td>
+              <td onclick="sortCarmaxTable(3)"><h3>Amount Borrowed</h3></td>
+              <td onclick="sortCarmaxTable(4)"><h3>Payment per Month</h3></td>
+              <td onclick="sortCarmaxTable(5)"><h3>Geico Insurance</h3></td>
+              <td onclick="sortCarmaxTable(6)"><h3>Liberty Mutual</h3></td>
+              <td onclick="sortCarmaxTable(7)"><h3>Progressive</h3></td>
+          </tr>
+          <tr>
+              <td><a href="https://www.carmax.com/car/23471361" target="_blank">2015 Chevrolet Malibu LT</a></td>
+              <td><p>2015</p></td>
+              <td><p>$15,998</p></td>
+              <td><p>$9,998</p></td>
+              <td><p>$180</p></td>
+              <td><p>$516</p></td>
+              <td><p>$369</p></td>
+              <td><p>$236</p></td>
+
+          </tr>
+          <tr>
+              <td><a href="https://www.carmax.com/car/23893830" target="_blank">2015 Mazda Mazda3 I Touring</a></td>
+              <td><p>2015</p></td>
+              <td><p>$15,998</p></td>
+              <td><p>$9,998</p></td>
+              <td><p>$180</p></td>
+              <td><p>$469</p></td>
+              <td><p>$375</p></td>
+              <td><p>$208</p></td>
+          </tr>      
+            </table>
+    </body>
